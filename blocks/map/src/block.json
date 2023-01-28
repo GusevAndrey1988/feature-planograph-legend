@@ -1,0 +1,26 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "feature-planograph-legend/map",
+	"version": "0.1.0",
+	"title": "Feature Planograph Legend - Map",
+	"category": "widgets",
+	"icon": "location-alt",
+	"description": "",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "feature-planograph-legend/map",
+	"editorScript": "file:./index.jsx",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"attributes": {
+		"projectId": {
+			"type": "string",
+			"source": "attribute",
+			"selector": "div",
+			"attribute": "data-planograph",
+			"default": ""
+		}
+	}
+}
